@@ -1,6 +1,6 @@
 {
-  "name": "@entrinsik-org/informer-db2dates",
-  "version": "1.0.0",
+  "name": "@entrinsik/informer-db2dates",
+  "version": "1.0.2",
   "description": "Data type interceptor that converts / parses common \"YYYYMMDD\" text dates from DB2 to a Date object. Works on any datasource (not just DB2)",
   "main": "lib/index.js",
   "directories": {
@@ -8,10 +8,6 @@
   },
   "scripts": {
     "test": "mocha test --reporter progress --recursive"
-  },
-  "repository": {
-    "type": "git",
-    "url": "module_git_repo"
   },
   "author": "",
   "license": "MIT",
@@ -26,7 +22,9 @@
     "gulp-mocha": "^2.0.0",
     "gulp-tag-version": "^1.2.1",
     "jshint-stylish": "^1.0.1",
-    "mocha": "^2.2.1",
-    "moment": "2.18.1"
+    "mocha": "^2.2.1"
+  },
+  "dependencies": {
+    "moment": "^2.20.1"
   }
 }
