@@ -1,6 +1,6 @@
 {
   "name": "@entrinsik/informer-db2dates",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Data type interceptor that converts / parses common \"YYYYMMDD\" text dates from DB2 to a Date object. Works on any datasource (not just DB2)",
   "main": "lib/index.js",
   "directories": {
