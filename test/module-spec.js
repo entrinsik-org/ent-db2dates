@@ -38,4 +38,10 @@ describe('The db2dates data type interceptor', function () {
         var converted = this.plugin.convert('date',0,idFunction);
         (converted === null).should.be.true;
     })
+    it('should convert an array', function() {
+
+        const convert = this.plugin.convert('date', [20101102, 19981203], idFunction);
+        convert[0].getTime().should.equal(new Moment('2010-11-02').toDate().getTime());
+        convert[1].getTime().should.equal(new Moment('1998-12-03').toDate().getTime());
+    })
 });
